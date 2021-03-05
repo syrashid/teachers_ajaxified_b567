@@ -3,12 +3,14 @@
 </div>
 
 <div class="text-center">
-  <div class="d-flex justify-content-center mt-4">
-    <button type="button" class="btn btn-outline-dark">
+  <div class="d-flex justify-content-center mt-4" data-controller="counter">
+    <button type="button" class="btn btn-outline-dark" data-action="click->counter#refresh">
       Refresh Counter
-      <span class="badge badge-dark">
+      <span class="badge badge-dark" data-counter-target="count">
         <%= @teacher_count %>
       </span>
     </button>
   </div>
 </div>
+
+
