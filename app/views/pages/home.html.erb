@@ -1,3 +1,14 @@
-<div class="text-center">
+<div class="text-center mb-5">
 <%= link_to "Browse Teachers", teachers_path, class: 'btn btn-dark'  %>
+</div>
+
+<div class="text-center">
+  <div class="d-flex justify-content-center mt-4">
+    <button type="button" class="btn btn-outline-dark">
+      Refresh Counter
+      <span class="badge badge-dark">
+        <%= @teacher_count %>
+      </span>
+    </button>
+  </div>
 </div>
